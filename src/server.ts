@@ -34,7 +34,13 @@ import { clear } from 'console';
     if(!image_url){
       res.send("Image link is required")
     }
-    res.send("Image link provided")
+    let filteredpath = await filterImageFromURL(image_url);
+    res.sendFile(filteredpath, (err) => {
+      if(err){
+        res.send("Unable to process the image")
+      }
+      deleteLocalFiles([filteredpath])
+    });
   });
   //! END @TODO1
 

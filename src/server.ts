@@ -32,12 +32,12 @@ import { clear } from 'console';
   app.get("/filteredimage", async (req: Request, res: Response) => {
     const image_url: string = req.query.image_url;
     if(!image_url){
-      res.send("Image link is required")
+      res.status(201).send("Image link is required")
     }
     let filteredpath = await filterImageFromURL(image_url);
-    res.sendFile(filteredpath, (err) => {
+    res.status(200)sendFile(filteredpath, (err) => {
       if(err){
-        res.send("Unable to process the image")
+        res.status(422)send("Unable to process the image")
       }
       deleteLocalFiles([filteredpath])
     });

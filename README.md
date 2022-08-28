@@ -8,6 +8,7 @@ I used this image link for testing: https://images.pexels.com/photos/8473906/pex
 
 A link to the endpoint URL for a running elastic beanstalk deployment: http://udagram-sdhave-env.us-east-1.elasticbeanstalk.com/
 
+GitHub link: https://github.com/sdhave/udagram-sdhave-dev.git
 ## Tasks
 
 ### Setup Node Environment

@@ -29,7 +29,7 @@ import { clear } from 'console';
   //   the filtered image file [!!TIP res.sendFile(filteredpath); might be useful]
 
   /**************************************************************************** */
-  app.get("/filteredimage", async (req: Request, res Response) => {
+  app.get("/filteredimage", async (req: Request, res: Response) => {
     const image_url: string = req.query.image_url;
     if(!image_url){
       res.send("Image link is required")

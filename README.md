@@ -4,11 +4,10 @@ Udagram is a simple cloud application developed alongside the Udacity Cloud Engi
 
 3. [The Image Filtering Microservice](https://github.com/sdhave/udagram-sdhave-dev.git), the final project for the course. It is a Node-Express application which runs a simple script to process images. [Your assignment]
 
-I used this image link for testing: https://images.pexels.com/photos/8473906/pexels-photo-8473906.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load
-
-A link to the endpoint URL for a running elastic beanstalk deployment: http://udagram-sdhave-env.us-east-1.elasticbeanstalk.com/
+A link to the endpoint URL for a running elastic beanstalk deployment: http://udagram-sdhave-app-dev.us-east-1.elasticbeanstalk.com/
 
 GitHub link: https://github.com/sdhave/udagram-sdhave-dev.git
+
 ## Tasks
 
 ### Setup Node Environment
